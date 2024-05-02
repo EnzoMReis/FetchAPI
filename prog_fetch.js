@@ -14,6 +14,8 @@ consultar.addEventListener('click', ()=>{
         resposta.innerHTML += 'Bairro: '+ dados.bairro + '<br>'
         resposta.innerHTML += 'Estado: '+ dados.uf + '<br>'
 
+        resposta.style.fontSize = '1.3rem'
+        resposta.style.fontWeight = 'bold'
     })
     .catch((err)=>{
         console.error('erro de busca de dados ',err)
